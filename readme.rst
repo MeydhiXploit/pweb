@@ -2,9 +2,31 @@
 TUGAS 3 - CRUD Fakultas & Program Studi
 ########################################
 
-NAMA : MEYDHI ARI NUGROHO
-NIM  : 24010110126
-KELAS: B
+NAMA  : MEYDHI ARI NUGROHO
+NIM   : 24010110126
+KELAS : B
+
+========================================
+
+*******************
+Cara Penggunaan
+*******************
+
+1. Setup Database:
+   - Pastikan MySQL server Anda aktif (misal menggunakan Laragon).
+   - Buat database baru bernama ``pweb``.
+   - Import file database ``tugas-3.sql`` ke database ``pweb``.
+
+2. Jalankan Aplikasi:
+   - Akses melalui browser pada URL: ``http://localhost/pweb/``
+
+3. Akun Login Default:
+   - Email: ``meydhi@gmail.com``
+   - Password: ``admin``
+
+4. Fitur CRUD:
+   - **Fakultas**: Tambah, Edit, Hapus, Detail Fakultas. ID Fakultas dimasukkan secara manual saat Tambah, dan readonly saat Edit.
+   - **Program Studi**: Memiliki dropdown select untuk memilih Fakultas, dan radio button untuk memilih jenjang Strata (D3/S1/S2).
 
 ========================================
 
