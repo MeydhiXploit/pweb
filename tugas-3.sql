@@ -1,11 +1,27 @@
+-- MEMBUAT TABEL MAHASISWA
+CREATE TABLE IF NOT EXISTS mahasiswa (
+    mahasiswa_id INT PRIMARY KEY AUTO_INCREMENT,
+    mahasiswa_nim VARCHAR(20) NOT NULL,
+    mahasiswa_nama VARCHAR(100) NOT NULL,
+    mahasiswa_email VARCHAR(100) NOT NULL,
+    mahasiswa_password VARCHAR(40) NOT NULL
+);
+
+-- MENGISI TABEL MAHASISWA (Password: admin)
+INSERT INTO mahasiswa (mahasiswa_id, mahasiswa_nim, mahasiswa_nama, mahasiswa_email, mahasiswa_password) VALUES
+(3, '24010110126', 'Meydhi Ari Nugroho', 'meydhi@gmail.com', SHA1('admin')),
+(4, '24010110078', 'Sarip', 'sarip@gmail.com', SHA1('admin')),
+(5, '24010110078', 'M.Syarifuddin', 'syarif@gmail.com', SHA1('admin'))
+ON DUPLICATE KEY UPDATE mahasiswa_id=mahasiswa_id;
+
 -- MEMBUAT TABEL FAKULTAS
-CREATE TABLE fakultas (
+CREATE TABLE IF NOT EXISTS fakultas (
     fakultas_id INT PRIMARY KEY,
     fakultas_name VARCHAR(100) NOT NULL
 );
 
 -- MEMBUAT TABEL PRODI
-CREATE TABLE prodi (
+CREATE TABLE IF NOT EXISTS prodi (
     prodi_id INT PRIMARY KEY,
     fakultas_id INT,
     prodi_name VARCHAR(100) NOT NULL,
