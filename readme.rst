@@ -6,7 +6,7 @@ NAMA  : MEYDHI ARI NUGROHO
 
 NIM   : 24010110126
 
-KELAS : B
+KELAS : B2
 
 ========================================
 
